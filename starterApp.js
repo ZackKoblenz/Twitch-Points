@@ -11,10 +11,10 @@ function points(input, donoPoints, bitsPoints, subPoints){
     if(input.type == "dono"){
        return input.amount * donoPoints
     }
-    else if(input.type == bits){
+    else if(input.type == "bits"){
         return ((input.amount / 100) * bitsPoints).floor
     }
-    else if(inpit.type == sub){
+    else if(input.type == "sub"){
         return input.amount * subPoints
     }
 }
@@ -29,3 +29,5 @@ function inputCreator(type, amount){
 function inputUpdater(total, newAmount){
     return total[amount] = newAmount;
 }
+
+console.log();
